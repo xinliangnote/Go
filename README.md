@@ -16,7 +16,7 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 
 ## 学习交流
 
-关注微信公众号「新亮笔记」
+:star2: 关注微信公众号「新亮笔记」
 
 ![](https://github.com/xinliangnote/Go/blob/master/00-基础语法/images/qr.jpg)
 
