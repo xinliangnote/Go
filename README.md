@@ -16,6 +16,8 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 
 :white_check_mark:[Gin 路由配置](https://github.com/xinliangnote/Go/blob/master/01-Gin框架/codes/02-路由配置)
 
+:white_check_mark:[Gin 日志记录](https://github.com/xinliangnote/Go/blob/master/01-Gin框架/codes/03-日志记录)
+
 ## 项目目录
 
 详见 [Wiki](https://github.com/xinliangnote/Go/wiki)。
