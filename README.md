@@ -12,7 +12,7 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 
 ## 源码指引
 
-:white_check_mark:[Go 基本语法:two::six:个Demo](https://github.com/xinliangnote/Go/blob/master/00-基础语法/codes)
+:white_check_mark:[Go 基本语法 - 26 个 Demo](https://github.com/xinliangnote/Go/blob/master/00-基础语法/codes)
 
 :white_check_mark:[Gin 路由配置](https://github.com/xinliangnote/Go/blob/master/01-Gin框架/codes/02-路由配置)
 
