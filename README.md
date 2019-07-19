@@ -14,9 +14,9 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 
 :white_check_mark:[Go 基本语法 - 26 个 Demo](https://github.com/xinliangnote/Go/blob/master/00-基础语法/codes)
 
-:white_check_mark:[Gin 路由配置](https://github.com/xinliangnote/Go/blob/master/01-Gin框架/codes/02-路由配置)
+:white_check_mark:[Gin 自定义路由配置](https://github.com/xinliangnote/Go/blob/master/01-Gin框架/codes/02-路由配置)
 
-:white_check_mark:[Gin 日志记录](https://github.com/xinliangnote/Go/blob/master/01-Gin框架/codes/03-日志记录)
+:white_check_mark:[Gin 使用 Logrus 进行日志记录](https://github.com/xinliangnote/Go/blob/master/01-Gin框架/codes/03-日志记录)
 
 ## 项目目录
 
