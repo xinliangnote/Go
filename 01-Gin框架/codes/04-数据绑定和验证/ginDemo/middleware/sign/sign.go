@@ -53,6 +53,7 @@ func verifySign(c *gin.Context) (res map[string]string, err error) {
 		debug  = c.Query("debug")
 		ts, _  = strconv.ParseInt(c.Query("ts"), 10, 64)
 	} else if method == "POST" {
+		c.Request.ParseForm()
 		req    = c.Request.PostForm
 		sn     = c.PostForm("sn")
 		debug  = c.PostForm("debug")
