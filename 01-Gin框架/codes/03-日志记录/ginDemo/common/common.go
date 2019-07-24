@@ -77,6 +77,7 @@ func VerifySign(c *gin.Context) {
 		ts, _  = strconv.ParseInt(c.Query("ts"), 10, 64)
 
 	} else if method == "POST" {
+		c.Request.ParseForm()
 		req = c.Request.PostForm
 		sn = c.PostForm("sn")
 		ts, _  = strconv.ParseInt(c.PostForm("ts"), 10, 64)
