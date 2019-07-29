@@ -26,6 +26,10 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 
 - :white_check_mark: [Gin 框架 - 自定义错误处理](https://github.com/xinliangnote/Go/blob/master/01-Gin框架/codes/05-自定义错误处理)
 
+#### Go gRPC
+
+- :white_check_mark: [Gin gRPC - Hello World](https://github.com/xinliangnote/Go/blob/master/02-Go%20gRPC/codes/01-gRPC%20Hello%20World)
+
 ## 项目目录
 
 详见 [Wiki](https://github.com/xinliangnote/Go/wiki)。
