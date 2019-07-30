@@ -1,16 +1,33 @@
 package logger
 
 import (
+	"bytes"
+	"encoding/json"
 	"fmt"
 	"ginDemo/config"
+	"ginDemo/entity"
 	"github.com/gin-gonic/gin"
 	rotatelogs "github.com/lestrrat-go/file-rotatelogs"
 	"github.com/rifflock/lfshook"
 	"github.com/sirupsen/logrus"
 	"os"
 	"path"
+	"strconv"
 	"time"
 )
+
+type bodyLogWriter struct {
+	gin.ResponseWriter
+	body *bytes.Buffer
+}
+func (w bodyLogWriter) Write(b []byte) (int, error) {
+	w.body.Write(b)
+	return w.ResponseWriter.Write(b)
+}
+func (w bodyLogWriter) WriteString(s string) (int, error) {
+	w.body.WriteString(s)
+	return w.ResponseWriter.WriteString(s)
+}
 
 // 日志记录到文件
 func LoggerToFile() gin.HandlerFunc {
@@ -22,7 +39,7 @@ func LoggerToFile() gin.HandlerFunc {
 	fileName := path.Join(logFilePath, logFileName)
 
 	// 写入文件
-	src, err := os.OpenFile(fileName, os.O_APPEND|os.O_WRONLY, os.ModeAppend)
+	src, err := os.OpenFile(fileName, os.O_WRONLY|os.O_APPEND|os.O_CREATE, 0666)
 	if err != nil {
 		fmt.Println("err", err)
 	}
@@ -68,39 +85,53 @@ func LoggerToFile() gin.HandlerFunc {
 	logger.AddHook(lfHook)
 
 	return func(c *gin.Context) {
+
+		bodyLogWriter := &bodyLogWriter{body: bytes.NewBufferString(""), ResponseWriter: c.Writer}
+		c.Writer = bodyLogWriter
+
 		// 开始时间
 		startTime := time.Now()
 
 		// 处理请求
 		c.Next()
 
+		responseBody := bodyLogWriter.body.String()
+
+		var responseCode string
+		var responseMsg  string
+		var responseData interface{}
+
+
+		if responseBody != "" {
+			res := entity.Result{}
+			err := json.Unmarshal([]byte(responseBody), &res)
+			if err == nil {
+				responseCode = strconv.Itoa(res.Code)
+				responseMsg  = res.Message
+				responseData = res.Data
+			}
+		}
+
 		// 结束时间
 		endTime := time.Now()
 
-		// 执行时间
-		latencyTime := endTime.Sub(startTime)
-
-		// 请求方式
-		reqMethod := c.Request.Method
-
-		// 请求路由
-		reqUri := c.Request.RequestURI
-
-		// 状态码
-		statusCode := c.Writer.Status()
-
-		// 请求IP
-		clientIP := c.ClientIP()
-
 		// 日志格式
-		logger.WithFields(logrus.Fields{
-			"status_code"  : statusCode,
-			"latency_time" : latencyTime,
-			"client_ip"    : clientIP,
-			"req_method"   : reqMethod,
-			"req_uri"      : reqUri,
-		}).Info()
+		logger.WithFields(logrus.Fields {
+			"request_method"    : c.Request.Method,
+			"request_uri"       : c.Request.RequestURI,
+			"request_proto"     : c.Request.Proto,
+			"request_useragent" : c.Request.UserAgent(),
+			"request_referer"   : c.Request.Referer(),
+			"request_post_data" : c.Request.PostForm.Encode(),
+			"request_client_ip" : c.ClientIP(),
 
+			"response_status_code" : c.Writer.Status(),
+			"response_code"        : responseCode,
+			"response_msg"         : responseMsg,
+			"response_data"        : responseData,
+
+			"cost_time" : endTime.Sub(startTime),
+		}).Info()
 	}
 }
 
