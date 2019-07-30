@@ -2,6 +2,10 @@
 
 [Gin 自定义错误处理](https://github.com/xinliangnote/Go/blob/master/01-Gin框架/05-自定义错误处理.md)
 
+## 修改日志
+
+- 2019-07-30 优化了 logger.go，日志新增了返回数据。
+
 ## 调用
 
 ```
