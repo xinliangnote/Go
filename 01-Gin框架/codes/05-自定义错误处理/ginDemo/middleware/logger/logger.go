@@ -115,6 +115,10 @@ func LoggerToFile() gin.HandlerFunc {
 		// 结束时间
 		endTime := time.Now()
 
+		if c.Request.Method == "POST" {
+			c.Request.ParseForm()
+		}
+		
 		// 日志格式
 		logger.WithFields(logrus.Fields {
 			"request_method"    : c.Request.Method,
