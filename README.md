@@ -6,7 +6,29 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 
 持续更新... 
 
-## 项目指引
+## 项目结构
+
+```
+├─ Go
+│  ├─ 00-基础语法
+│     ├── 01-环境安装
+│     ├── 02-变量声明
+│     ├── 03-数组
+│     ├── 04-Slice 切片
+│     ├── 05-Struct 结构体
+│     ├── 06-Map 结构体
+│     ├── 07-循环
+│     ├── 08-函数
+│     ├── 09-chan 通道
+│  ├─ 01-Gin框架
+│     ├── 01-框架安装
+│     ├── 02-路由配置
+│     ├── 03-使用 Logrus 进行日志记录
+│     ├── 04-数据绑定和验证
+│     ├── 05-自定义错误处理
+│  ├─ 02-gRPC
+│     ├── 01-Go gRPC Hello World
+```
 
 如果你发现本项目有内容上的错误，欢迎提交 issues 进行指正。
 
@@ -29,10 +51,6 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 #### Go gRPC
 
 - :white_check_mark: [Gin gRPC - Hello World](https://github.com/xinliangnote/Go/blob/master/02-Go%20gRPC/codes/01-gRPC%20Hello%20World)
-
-## 项目目录
-
-详见 [Wiki](https://github.com/xinliangnote/Go/wiki)。
 
 ## 学习交流
 
