@@ -248,3 +248,5 @@ https://github.com/xinliangnote/go-gin-api
 ## go-gin-api 系列文章
 
 - [1. 使用 go modules 初始化项目](https://mp.weixin.qq.com/s/1XNTEgZ0XGZZdxFOfR5f_A)
+
+**Gin 模型验证 Validator 升级：validator.v8 升级为 validator.v9，已提交到 github !!!**
