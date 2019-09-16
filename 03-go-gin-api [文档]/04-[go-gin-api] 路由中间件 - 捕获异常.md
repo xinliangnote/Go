@@ -184,7 +184,7 @@ func SetUp() gin.HandlerFunc {
 
 到这，就结束了。
 
-![](https://github.com/xinliangnote/Go/blob/master/03-go-gin-api%20%5B文档%5D/images/4_api_5.png)
+![](https://github.com/xinliangnote/Go/blob/master/03-go-gin-api%20%5B文档%5D/images/4_api_5.jpeg)
 
 ## 备注
 
