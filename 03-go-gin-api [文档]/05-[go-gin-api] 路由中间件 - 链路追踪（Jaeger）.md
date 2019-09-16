@@ -2,7 +2,7 @@
 
 首先同步下项目概况：
 
-![](https://github.com/xinliangnote/Go/blob/master/03-go-gin-api%20%5B文档%5D/images/5_api_4.png)
+![](https://github.com/xinliangnote/Go/blob/master/03-go-gin-api%20%5B文档%5D/images/5_api_1.png)
 
 上篇文章分享了，路由中间件 - 捕获异常，这篇文章咱们分享：路由中间件 - Jaeger 链路追踪。
 
