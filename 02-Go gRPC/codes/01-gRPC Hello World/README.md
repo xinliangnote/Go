@@ -1,6 +1,6 @@
 ## 项目介绍
 
-[gRPC Hello World](https://github.com/xinliangnote/Go/blob/master/02-Go%20gRPC%20Hello%20World/01-Go%20gRPC%20Hello%20World.md)
+[gRPC Hello World](https://github.com/xinliangnote/Go/blob/master/02-Go%20gRPC/01-Go%20gRPC%20Hello%20World.md)
 
 **目录结构**
 
