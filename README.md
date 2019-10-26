@@ -60,7 +60,7 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 
 - :white_check_mark: [Gin gRPC - Hello World](https://github.com/xinliangnote/Go/blob/master/02-Go%20gRPC/codes/01-gRPC%20Hello%20World)
 
-#### :star: :star: :star: go-gin-api 框架
+#### go-gin-api 框架 :star: :star: :star: 
 
 - :package: [go-gin-api](https://github.com/xinliangnote/go-gin-api)
 
