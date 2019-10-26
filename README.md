@@ -35,6 +35,7 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 │     ├── 04-路由中间件 - 异常捕获
 │     ├── 05-路由中间件 - 链路追踪（Jaeger）- 理论
 │     ├── 06-路由中间件 - 链路追踪（Jaeger）- 实战
+│     ├── 07-路由中间件 - 签名验证
 ```
 
 如果你发现本项目有内容上的错误，欢迎提交 issues 进行指正。
@@ -59,7 +60,7 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 
 - :white_check_mark: [Gin gRPC - Hello World](https://github.com/xinliangnote/Go/blob/master/02-Go%20gRPC/codes/01-gRPC%20Hello%20World)
 
-#### go-gin-api 框架
+#### :star: :star: :star: go-gin-api 框架
 
 - :package: [go-gin-api](https://github.com/xinliangnote/go-gin-api)
 
