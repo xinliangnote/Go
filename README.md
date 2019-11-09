@@ -28,6 +28,7 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 │     ├── 05-自定义错误处理
 │  ├─ 02-gRPC
 │     ├── 01-Go gRPC Hello World
+│     ├── 02-Go gRPC 调试工具
 │  ├─ 03-go-gin-api [文档]
 │     ├── 01-使用 go modules 初始化项目
 │     ├── 02-规划项目目录和参数验证
@@ -58,7 +59,7 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 
 #### Go gRPC
 
-- :white_check_mark: [Gin gRPC - Hello World](https://github.com/xinliangnote/Go/blob/master/02-Go%20gRPC/codes/01-gRPC%20Hello%20World)
+- :white_check_mark: [Go gRPC - Hello World](https://github.com/xinliangnote/Go/blob/master/02-Go%20gRPC/codes/01-gRPC%20Hello%20World)
 
 #### go-gin-api 框架 :star: :star: :star: 
 
