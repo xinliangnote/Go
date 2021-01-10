@@ -26,6 +26,7 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 │     ├── 13-结构(struct) 实现 接口(interface) 
 │     ├── 14-学习 grpc.Dial(target string, opts …DialOption) 的写法
 │     ├── 15-time.RFC3339 时间格式化
+│     ├── 16-常用签名算法的基准测试
 │  ├─ 01-Gin框架
 │     ├── 01-框架安装
 │     ├── 02-路由配置
