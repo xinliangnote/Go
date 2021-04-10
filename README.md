@@ -51,6 +51,10 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 
 ## 源码指引
 
+#### 【练手项目推荐！！！】 go-gin-api  :star: :star: :star: 
+
+- :package: [go-gin-api](https://github.com/xinliangnote/go-gin-api)
+
 #### Go - 基础篇
 
 - :white_check_mark: [Go 基本语法 - 26 个 Demo](https://github.com/xinliangnote/Go/blob/master/00-基础语法/codes)
@@ -68,10 +72,6 @@ Go 入门的学习笔记，从零开始学 Go，做一个 Go 工程师。
 #### Go gRPC
 
 - :white_check_mark: [Go gRPC - Hello World](https://github.com/xinliangnote/Go/blob/master/02-Go%20gRPC/codes/01-gRPC%20Hello%20World)
-
-#### go-gin-api 框架 :star: :star: :star: 
-
-- :package: [go-gin-api](https://github.com/xinliangnote/go-gin-api)
 
 ## 学习交流
 
