@@ -51,7 +51,7 @@ func handlerTask3(wg *sync.WaitGroup) {
 全部任务执行完毕.
 ```
 
-## sync.WaitGroup 闭坑指南
+## sync.WaitGroup 避坑指南
 
 ### 01
 
